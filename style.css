@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Jersey 15", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    background-image: linear-gradient( rgb(0, 64, 128), rgb(0, 221, 255) );
+    overflow: hidden;
+}
+
+.contador{
+    border: 1px solid black;
+    width: 300px;
+    height: 500px;
+    background-image: linear-gradient( green, yellow );
+}
+
+.txt{
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 50px;
+    text-align: left;
+}
+
+.num{
+    margin-top: 20px;
+    font-size: 50px;
+    text-align: center;
+}
+
+button{
+    width: 250px;
+    height: 50px;
+   margin-left: 25px;
+   margin-top: 60px;
+   border-radius: 10px;
+   font-size: 25px;
+   background-image: linear-gradient(to left, rgb(194, 1, 1), rgb(0, 255, 149) ); 
+   color: white;
+}
+
+.castelo{
+    top: 60%;
+    left: 50%;
+    width: 300px;
+    transform: translate(-50%, -50%);
+    display: block;
+    position: absolute;
+    
+}
+
+.star{
+    position: absolute;
+   top: 40%;
+   left: 55%;
+   display: none;
+   
+  
+}
+
+.grama{
+    margin-left: -10px;
+    width: 110%;
+    height: 30px;
+    border: 3px solid rgb(0, 0, 0);
+    margin-top: 45px;
+    background-color: green;
+}
+
+.terra{
+    margin-left: -10px;
+    width: 110%;
+    height: 200px;
+    border: 3px solid rgb(0, 0, 0);
+
+    background-color: rgb(75, 36, 3);
+}
+
+@keyframes starUP{
+    
+    0%{
+        display: block;
+        opacity: 1;
+    }50%{
+        opacity: 0.7;
+    }100%{
+        top: 20%;
+        opacity: 0;
+    }
+
+}
+
+@keyframes casteloM {
+    0% {
+        
+    }
+    100% {
+        width: 285px;
+    }
+}
